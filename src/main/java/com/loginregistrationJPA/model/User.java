@@ -1,11 +1,14 @@
 package com.loginregistrationjpa.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+import javax.persistence.Table;
+@Table(name = "user")
 @Entity
 public class User {	
+	@Column(name = "Id")
 	@Id
 private long id;
 		
